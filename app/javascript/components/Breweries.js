@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Breweries = () =>{
+const Breweries = (props) =>{
 
   // const renderBreweries = () => {
   //   //map through all departments, generate data for each in page
@@ -42,9 +42,9 @@ const Breweries = () =>{
     
   return(
     <div>
-      <h1>breweries</h1>
-      {/* <h1>Title: {props.brewery.name}</h1> */}
-      {/* <h2>Here is your note:{props.note.description}</h2> */}
+      <h1>List of Breweries</h1>
+      <h1>Brewery Name: {props.brewery.name}</h1>
+      <h2>Here is the number of patrons that visit the brewery: {props.patron.size}</h2>
       <a href='/'>Home</a>
     </div>
   )

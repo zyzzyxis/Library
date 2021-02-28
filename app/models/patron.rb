@@ -1,3 +1,3 @@
 class Patron < ApplicationRecord
-  belongs_to :brewery
+  belongs_to :brewery, dependent: :destroy
 end

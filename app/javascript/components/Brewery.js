@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Brewery = () => {
+const Brewery = (props) => {
   
     return(
       <div>
