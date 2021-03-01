@@ -4,7 +4,7 @@ class BreweriesController < ApplicationController
 
   def index 
     @breweries = Brewery.all
-    render component: "Breweries", props: {breweries: @breweries}
+    render component: "Breweries", props: {breweries: @breweries, patrons: @patrons}
   end
   
   def show
